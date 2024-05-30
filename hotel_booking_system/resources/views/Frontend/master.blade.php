@@ -140,7 +140,12 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-5">
           <div class="section-heading">
             <h6>| Featured</h6>
-            <h2>Best Appartment &amp; Sea view</h2>
+            <h2>Now Our Service Available in cities now</h2>
+            <ul>
+            @foreach($city_country as $item)
+              <li>{{ $item->city_country }}</li>
+            @endforeach
+            </ul>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -151,8 +156,7 @@ https://templatemo.com/tm-591-villa-agency
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                Get <strong>the best villa</strong> website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank">best free CSS templates</a> in the world. Please tell your friends about it.</div>
-              </div>
+                </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">

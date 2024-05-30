@@ -40,3 +40,9 @@ Route::get('/get-hotel-datatable','App\Http\Controllers\hotelController@gethotel
 Route::get('/add-room-type','App\Http\Controllers\roomController@index')->name('add_room_type');
 Route::post('/save-room-type','App\Http\Controllers\roomController@saveRoomType');
 Route::get('/get-room-type','App\Http\Controllers\roomController@get_room_type')->name('get_room_type');
+Route::get('/user-hotel-view','App\Http\Controllers\homeController@display_hotel_data')->name('frontend.display_hotel');
+
+
+Route::get('/user-login','App\Http\Controllers\userController@user_login')->name('user_login');
+Route::get('/user-register','App\Http\Controllers\userController@user_register')->name('user_register');
+Route::post('/save-user','App\Http\Controllers\userController@save_user');
